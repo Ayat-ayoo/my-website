@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+
+    .login-container {
+        display: flex;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 900px;
+        max-width: 100%;
+        direction: rtl; 
+    }
+
+    .form-section, .image-section {
+        flex: 1;
+        padding:18px;
+    }
+
+    .form-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 7px;
+        font-weight: bold;
+    }
+
+    .form-group input {
+        width: 90%;
+        padding: 10px 10px 10px 35px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .form-group i {
+        position: absolute;
+        top: 50%;
+        left: 52px;
+        transform: translateY(-50%);
+        color: #ccc;
+    }
+
+    .form-group button {
+        width: 60%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 55px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+	
+    .form-group1 button {
+        width: 100%;
+        padding: 10px;
+        background-color: #f2f2f2;
+        color: #000000;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    .image-section {
+        background-image: url('as.jpg'); 
+        background-size: cover;
+        background-position: center;
+    }
+
+    .ltr .login-container {
+        direction: ltr;
+    }
+
+    .ltr .form-section {
+        text-align: left;
+    }
+
+    .ltr .form-group i {
+        left: unset;
+        right: 10px;
+    }
+</style>
+</head>
+<body class="rtl">
+
+<div class="login-container">
+    <div class="image-section"></div>
+    <div class="form-section">
+	   <center>
+        <h2>Login</h2>
+	   </center>
+        <form action="#">
+            <div class="form-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="UserName" style="text-align:left ; 
+                 background-image: url('user.jpg'); 
+                 background-size: 25px; 
+                 background-position: left ; 
+                 background-repeat: no-repeat;
+                 border: 1px solid #ccc; 
+                 font-size: 14px; />
+            </div>
+
+            <div class="form-group">
+                <i class="fas fa-lock"></i>
+               <input type="password" placeholder="UserName" style="text-align:left ; 
+                 background-image: url('lock.jpg'); 
+                 background-size: 25px; 
+                 background-position: left ; 
+                 background-repeat: no-repeat;
+                 border: 1px solid #ccc; 
+                font-size: 14px; />
+            </div>
+            <div class="form-group">
+			 <center>
+			  <br><br/>
+                <button type="submit">Login Now</button>
+			 </center>
+            </div>
+	        <div class="form-group1">
+               <center>
+			   <label  style ="font-weight:bold">Login with other </label>
+			   <br><br/>
+			   </center>
+			   <button type="submit"  style= "background-image: url('google.jpg');
+                 background-size: 25px; 
+                 background-position:120px ; 
+                 background-repeat: no-repeat;
+                 border: 1px solid #ccc; 
+                 font-size: 14px;">Login with <i style ="font-weight:bold" >Google</i></button><br><br/>
+				 
+			   <button type="submit"  style=" background-image: url('fb.jpg'); 
+                 background-size: 25px; 
+                 background-position: 120px ; 
+                 background-repeat: no-repeat;
+                 border: 1px solid #ccc; 
+                font-size: 14px;1" >Login with facebook</button>
+			</div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
